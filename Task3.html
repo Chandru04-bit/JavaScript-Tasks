@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Tasks</title>
+</head>
+<body>
+    <h1>JavaScript Fundamentals Tasks</h1>
+
+    <script>
+        document.write("<h3>Task 1: Student Result Checker</h3>");
+        let marks = 75;
+
+        let result = marks >= 35 ? "Pass" : "Fail";
+        let grade;
+
+        if (marks >= 90) {
+            grade = "Grade A";
+        } else if (marks >= 75) {
+            grade = "Grade B";
+        } else if (marks >= 60) {
+            grade = "Grade C";
+        } else {
+            grade = "No Grade";
+        }
+
+        document.write("Result: " + result + "<br>");
+        document.write("Grade: " + grade + "<br><br>");
+
+
+        document.write("<h3>Task 2: Employee Bonus Calculator</h3>");
+        let salary = 25000;
+        let bonus = salary * 0.10;
+        let finalSalary = salary + bonus;
+
+        document.write("Original Salary: " + salary + "<br>");
+        document.write("Bonus: " + bonus + "<br>");
+        document.write("Final Salary: " + finalSalary + "<br><br>");
+
+        document.write("<h3>Task 3: User Login Validation</h3>");
+        let email = "admin@gmail.com";
+        let password = "12345";
+
+        if (email === "admin@gmail.com" && password === "12345") {
+            document.write("Login Success<br><br>");
+        } else {
+            document.write("Login Failed<br><br>");
+        }
+
+        document.write("<h3>Task 4: Product Discount Calculator</h3>");
+        let price = 2000;
+        let discount = price > 1000 ? price * 0.20 : 0;
+        let finalPrice = price - discount;
+
+        document.write("Original Price: " + price + "<br>");
+        document.write("Discount: " + discount + "<br>");
+        document.write("Final Amount: " + finalPrice + "<br><br>");
+
+
+        document.write("<h3>Task 5: Array Product Management</h3>");
+        let products = ["Laptop", "Mobile", "Mouse", "Keyboard"];
+
+        document.write("First Product: " + products[0] + "<br>");
+        document.write("Last Product: " + products[products.length - 1] + "<br>");
+        document.write("Total Products: " + products.length + "<br><br>");
+
+        document.write("<h3>Task 6: Employee Object</h3>");
+        let employee = {
+            name: "Naveen",
+            department: "Development",
+            salary: 30000
+        };
+
+        document.write("Name: " + employee.name + "<br>");
+        document.write("Department: " + employee.department + "<br>");
+        document.write("Salary: " + employee.salary + "<br><br>");
+
+        // Task 7: E-Commerce Cart Total
+        document.write("<h3>Task 7: E-Commerce Cart Total</h3>");
+        let shirt = 500;
+        let pant = 1000;
+        let shoe = 1500;
+
+        let totalBill = shirt + pant + shoe;
+        let cartDiscount = totalBill * 0.10;
+        let finalAmount = totalBill - cartDiscount;
+
+        document.write("Total Bill: " + totalBill + "<br>");
+        document.write("Discount: " + cartDiscount + "<br>");
+        document.write("Final Amount: " + finalAmount + "<br><br>");
+
+        document.write("<h3>Task 8: Age Eligibility Checker</h3>");
+        let age = 19;
+
+        if (age >= 18) {
+            document.write("Eligible for Voting<br><br>");
+        } else {
+            document.write("Not Eligible<br><br>");
+        }
+
+        document.write("<h3>Task 9: Increment Decrement Practice</h3>");
+        let a = 10;
+
+        document.write("Initial Value: " + a + "<br>");
+        a++;
+        document.write("After a++ : " + a + "<br>");
+        ++a;
+        document.write("After ++a : " + a + "<br>");
+        a--;
+        document.write("After a-- : " + a + "<br>");
+        --a;
+        document.write("After --a : " + a + "<br><br>");
+
+        document.write("<h3>Task 10: Mini Employee Attendance System</h3>");
+        let isPresent = true;
+        let completedTask = true;
+
+        if (isPresent && completedTask) {
+            document.write("Eligible for Salary<br><br>");
+        } else {
+            document.write("Not Eligible<br><br>");
+        }
+        document.write("<h3>Bonus: Employee Management Console App</h3>");
+
+        let emp = {
+            id: 101,
+            name: "John",
+            department: "Development",
+            salary: 35000,
+            experience: 2
+        };
+
+        let empBonus = emp.salary * 0.10;
+        let empFinalSalary = emp.salary + empBonus;
+        let performance = emp.experience >= 2 ? "Good" : "Average";
+
+        document.write("Employee ID: " + emp.id + "<br>");
+        document.write("Employee Name: " + emp.name + "<br>");
+        document.write("Department: " + emp.department + "<br>");
+        document.write("Salary: " + emp.salary + "<br>");
+        document.write("Experience: " + emp.experience + " Years<br><br>");
+
+        document.write("Bonus: " + empBonus + "<br>");
+        document.write("Final Salary: " + empFinalSalary + "<br><br>");
+
+        document.write("Performance Status: " + performance);
+    </script>
+
+</body>
+</html>
