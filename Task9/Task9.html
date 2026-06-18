@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Store API Demo</title>
+    <link rel="stylesheet" href="Task9.css">
+</head>
+<body>
+
+    <h1>Fake Store API Demo</h1>
+
+    <p id="loading">Loading Products...</p>
+
+    <div class="controls">
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Products..."
+        >
+
+        <select id="category">
+            <option value="all">All</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelry</option>
+        </select>
+    </div>
+
+    <div class="cart-box">
+        <h3>Cart Count: <span id="cartCount">0</span></h3>
+        <h3>Total Price: $<span id="cartTotal">0</span></h3>
+    </div>
+
+    <div id="stats"></div>
+
+    <h2>Products</h2>
+    <div id="products"></div>
+
+    <h2>Cart Items</h2>
+    <div id="cartItems"></div>
+
+    <script src="Task9.js"></script>
+
+</body>
+</html>

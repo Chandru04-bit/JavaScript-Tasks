@@ -180,3 +180,4 @@ group.pop();
 group.splice(1, 0, "David");
 
 console.log("Final Group:", group);
+
